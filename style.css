@@ -1,0 +1,1511 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: mountain;
+    src: url(./font\ mountain.ttf);
+}
+
+@font-face {
+    font-family: mountain-2;
+    src: url(./font\ mountain2.ttf);
+}
+
+.page1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://h5d9a9f8.rocketcdn.me/wp-content/uploads/2024/03/MTB-tour-slovenia-soca-river.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#nav {
+    height: 100px;
+    width: 100%;
+    border: 1px solid white;
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    position: fixed;
+
+}
+
+.nav-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: -90%;
+    left: 0;
+}
+
+#nav-part1 {
+    height: 100%;
+    width: 10%;
+    border: 1px solid rgba(255, 255, 255, 0.619);
+    border-left: none;
+    border-top: none;
+    display: flex;
+    gap: 5px;
+    padding: 30px 20px;
+}
+
+#nav-part1 i {
+    color: rgba(255, 255, 255, 0.637);
+    font-size: 1.2vw;
+}
+
+#nav-part1 h5 {
+    font-size: 1vw;
+    color: white;
+    font-family: lato;
+    font-weight: 100;
+
+}
+
+#nav svg {
+    height: 80px;
+    width: 100px;
+    object-fit: cover;
+}
+
+#nav-part3 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#profile img {
+    height: 20px;
+    width: 15px;
+    object-fit: cover;
+}
+
+#profile h4 {
+    font-size: 1.3vw;
+    font-family: lato;
+    font-weight: 300;
+    color: white;
+}
+
+#btn {
+    font-size: 1.3vw;
+    color: black;
+    background-color: white;
+    font-family: lato;
+    font-weight: 500;
+    width: fit-content;
+    padding: 10px 25px;
+    border-radius: 20px;
+    transition: all ease 0.5s;
+}
+
+#btn:hover {
+    background-color: #B6B4AE;
+    font-weight: 700;
+}
+
+.nav-2 {
+    height: 100px;
+    width: 100%;
+    background: #242421;
+    position: absolute;
+    top: -15%;
+}
+
+.new-text {
+    height: 87%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.498);
+
+}
+
+.top {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+    padding: 0px 20px;
+    height: 350px;
+
+}
+
+.top i {
+    color: white;
+    font-size: 1.5vw;
+}
+
+.top h3 {
+    font-size: 1vw;
+    color: rgba(255, 255, 255, 0.756);
+    font-family: lato;
+    font-weight: 100;
+}
+
+.main-text {
+    height: 350px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+
+}
+
+.main-text h1 {
+    font-size: 6vw;
+    color: white;
+    font-family: rubik;
+    font-weight: 800;
+    line-height: 5vw;
+}
+
+.main-text button {
+    padding: 15px 32px;
+    font-size: 1vw;
+    color: rgb(5, 5, 5);
+    font-family: lato;
+    font-weight: 100;
+    border-radius: 50px;
+    margin: 0px 0px;
+    transition: all ease 0.5s;
+}
+
+.main-text button:hover {
+    background-color: #B6B4AE;
+}
+
+.page2 {
+    height: 120vh;
+    width: 100%;
+    background: #000;
+    display: flex;
+
+}
+
+.left {
+    height: 100%;
+    width: 50%;
+    background: #242421;
+    padding: 0px 120px;
+    display: flex;
+    align-items: center;
+}
+
+.image-container {
+    height: 0px;
+    width: 95%;
+    background-image: url(https://h5d9a9f8.rocketcdn.me/wp-content/uploads/2023/10/HI-Adventures-Nepal-Mountain-Bike-Guides-28.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.right {
+    height: 100%;
+    width: 50%;
+    padding: 50px 30px;
+    background: #242421;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.right h5 {
+    height: 1vw;
+    color: white;
+    font-family: lato;
+}
+
+.right i {
+    height: 1.5vw;
+    color: white;
+    font-family: lato;
+}
+
+.right h3 {
+    font-size: 2.6vw;
+    color: white;
+    font-family: lato;
+    padding: 10px 0px;
+}
+
+.image-box {
+    height: 0px;
+    width: 750px;
+    background-image: url(https://h5d9a9f8.rocketcdn.me/wp-content/uploads/2023/09/home_missions_landscape.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.text-scroller {
+    height: 70px;
+    width: 100%;
+    background: #000;
+    overflow: hidden;
+    overflow: scroll;
+    display: flex;
+    align-items: center;
+}
+
+.text-scroller::-webkit-scrollbar {
+    display: none;
+}
+
+.text-scroller p {
+    color: white;
+    padding: 10px 0px;
+    font-size: 1.3vw;
+    font-family: lato;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    animation: scroll 16s linear infinite;
+
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.page3 {
+    height: 120vh;
+    width: 100%;
+    background: #F2F0E8;
+}
+
+.first {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+.first i {
+    color: black;
+    font-size: 1.2vw;
+}
+
+.first h4 {
+    font-family: mountain-2;
+    font-size: 1vw;
+    font-weight: 500;
+    color: black;
+}
+
+.second-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.second-text h2 {
+    color: black;
+    font-family: mountain;
+    font-weight: 500;
+    font-size: 4vw;
+}
+
+.second-text h4 {
+    color: black;
+    font-family: mountain-2;
+    font-weight: 500;
+}
+
+.page3-container {
+    height: 800px;
+    width: 100%;
+    background: #f2eeee;
+    display: flex;
+}
+
+.container-1 {
+    height: 90%;
+    width: 32%;
+    background-color: rgba(144, 238, 144, 0.668);
+    padding: 0px 20px;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: end;
+    position: relative;
+}
+
+.container-1 h5 {
+    color: white;
+    font-size: 1.5vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 82%;
+    top: 80%;
+}
+
+.mini-container-1 {
+    height: 100%;
+    width: 430px;
+    background-color: red;
+    position: relative;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mini-container-1 video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bot {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.11);
+    position: absolute;
+    top: 0;
+    z-index: 999;
+}
+
+.bot h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.5vw;
+    color: white;
+    font-weight: 900;
+    margin: 550px 110px;
+
+}
+
+
+
+
+.container-second {
+    height: 100%;
+    width: 32%;
+    background-color: rgb(250, 244, 244);
+    padding: 10px 25px;
+}
+
+#img-1 {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mini-container-2 {
+    height: 90%;
+    width: 100%;
+    background-color: green;
+    position: relative;
+}
+
+.mini-cont {
+    height: 100%;
+    width: 100%;
+    background: #0000002d;
+    position: absolute;
+    top: 0;
+    padding: 40px 130px;
+    z-index: 999;
+}
+
+.mini-cont h3 {
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 3vw;
+}
+
+.container-second h2 {
+    color: black;
+    font-family: lato;
+    font-weight: 700;
+    font-size: 3vw;
+}
+
+#img-2 {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bottom i {
+    color: black;
+    font-size: 1.5vw;
+
+}
+
+.bottom h4 {
+    color: black;
+    font-size: 1vw;
+    font-family: lato;
+}
+
+.container-third {
+    height: 100%;
+    width: 32%;
+    background: white;
+    position: relative;
+}
+
+.container-third video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container-third .mini-cont {
+    height: 100%;
+    width: 100%;
+    background: #0000002d;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+}
+
+.mini-cont h3 {
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 3vw;
+    margin: 10px -100px;
+}
+
+.container-third h2 {
+    color: rgb(16, 15, 15);
+    font-family: lato;
+    font-weight: 700;
+    font-size: 3vw;
+}
+
+.container-third .bottom-1 {
+    color: rgba(25, 25, 25, 0.761);
+    font-family: lato;
+    display: flex;
+    gap: 10px;
+    padding: 0px 10px;
+}
+
+.box-anim {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    padding: 40px 0px;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+#icon-1 {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.453);
+    padding: 20px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.514);
+}
+
+#icon-2 {
+    font-size: 30px;
+    color: black;
+    padding: 20px 20px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+#icon-2::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgb(12, 12, 11);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    left: -100%;
+    transition: all ease 0.5s;
+}
+
+#icon-2:hover::after {
+    left: 0%;
+    opacity: 1;
+    z-index: -1;
+}
+
+#icon-2:hover {
+    color: white;
+    z-index: 99;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background: #000;
+}
+
+.page-4 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://h5d9a9f8.rocketcdn.me/wp-content/uploads/2023/10/West-Coast-Output-032.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.page4-part {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.376);
+    padding: 380px 0px;
+}
+
+.page4-part h1 {
+    font-size: 5vw;
+    color: white;
+    font-weight: 700;
+    font-family: rubik;
+    margin: 50px 0px;
+}
+
+.btm {
+    height: 150px;
+    width: 100%;
+    background: rgba(21, 20, 20, 0.275);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: 0px 0px;
+}
+
+.btm h3 {
+    color: white;
+    font-family: mountain-2;
+}
+
+.show-btn {
+    color: black;
+    padding: 10px 20px;
+    background-color: white;
+    font-family: lato;
+    font-weight: 300;
+    width: fit-content;
+    border-radius: 50px;
+    transition: all ease 0.5s;
+}
+
+.show-btn:hover {
+    background-color: #B6B4AE;
+}
+
+.page5 {
+    height: 130vh;
+    width: 100%;
+    background-color: #242421;
+    padding: 80px 0px;
+    display: flex;
+    position: relative;
+}
+
+.page5-part1 {
+    height: 0%;
+    width: 50%;
+    background-image: url(https://h5d9a9f8.rocketcdn.me/wp-content/uploads/2023/10/why-handi-escaping-daily-grind_namibia.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.page5-part2 {
+    height: 80%;
+    width: 50%;
+    background: #000;
+}
+
+.text-container {
+    height: 400px;
+    width: 50%;
+    padding: 20px 20px;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+
+.one {
+    color: white;
+    font-size: 1.1vw;
+    font-family: lato;
+    font-weight: 100;
+    display: flex;
+    gap: 10px;
+}
+
+.text-container h2 {
+    font-size: 3.5vw;
+    color: white;
+    font-family: lato;
+    font-weight: 900;
+    line-height: 3.2vw;
+}
+
+.text-container2 {
+    height: 200px;
+    width: 100%;
+    margin: 500px 0px;
+    padding: 20px 150px;
+}
+
+.text-container2 h4 {
+    font-family: mountain-2;
+    color: rgb(242, 238, 238);
+    font-weight: 600;
+    font-size: 1vw;
+}
+
+.find-btn {
+    color: black;
+    background: white;
+    font-size: 1vw;
+    font-family: lato;
+    font-weight: 900;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin: 30px 0px;
+}
+
+.find-btn:hover {
+    background-color: #B6B4AE;
+}
+
+.bottom-imgcontainer {
+    height: 300px;
+    width: 300px;
+    background-image: url(https://h5d9a9f8.rocketcdn.me/wp-content/uploads/2023/10/2015_Chile_MTB_6DIMG_9524.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 65%;
+    left: 20%;
+}
+
+.page6 {
+    height: 60vh;
+    width: 100%;
+    background: #F2F0E8;
+    position: relative;
+    padding: 80px 30px;
+}
+
+.page6 h1 {
+    color: black;
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 6vw;
+    font-weight: 900;
+    line-height: 5.9vw;
+}
+
+.page6 p {
+    color: black;
+    font-family: lato;
+    font-size: 1vw;
+    font-weight: 500;
+    position: absolute;
+    left: 68%;
+    line-height: 1.5vw;
+}
+
+.all-btn {
+    color: white;
+    padding: 10px 20px;
+    background-color: white;
+    width: fit-content;
+    border-radius: 50px;
+    font-family: lato;
+    font-weight: 600;
+    position: absolute;
+    left: 68%;
+    top: 78%;
+    padding: 20px 35px;
+    background-color: black;
+    transition: all ease o.1s;
+}
+
+.all-btn:hover {
+    background: #B6B4AE;
+    font-weight: 700;
+    color: black;
+}
+
+.page7 {
+    height: 100vh;
+    width: 100%;
+    background: rgb(248, 244, 244);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mini-box1 {
+    height: 150px;
+    width: 100%;
+    background: #F2F0E8;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    transition: all ease 0.5s;
+}
+
+.mini-box1::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgb(12, 12, 12);
+    position: absolute;
+    left: -100%;
+    transition: all ease 0.5s;
+    top: 0;
+}
+
+.mini-box1:hover::after {
+    left: 0%;
+    color: white;
+
+}
+
+.mini-boxtext {
+
+    display: flex;
+    align-items: start;
+    gap: 150px;
+}
+
+.mini-boxtext h2 {
+    color: black;
+    font-family: mountain;
+    font-weight: 900;
+    font-size: 2.5vw;
+
+}
+
+.mini-boxtext h5 {
+    color: black;
+    font-family: mountain-2;
+    font-weight: 900;
+    font-size: 2vw;
+
+}
+
+.mini-box1 i {
+    color: rgb(15, 15, 15);
+    font-size: 2vw;
+    margin: 0px 60px;
+    border: 1px solid black;
+    padding: 10px 15px;
+    overflow: hidden;
+    position: relative;
+    transition: all ease 0.5s;
+}
+
+
+.mini-box1 i::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgb(12, 12, 11);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    left: -100%;
+    transition: all ease 0.5s;
+}
+
+.mini-box1 i:hover::after {
+    left: 0%;
+    opacity: 1;
+    z-index: 99;
+    border: 1px solid white;
+
+
+}
+
+.mini-box1:hover i {
+    color: white;
+    z-index: 99;
+    border: 1px solid white;
+    background-color: black;
+
+}
+
+.mini-box1:hover .mini-boxtext h2 {
+    color: white;
+    z-index: 999;
+}
+
+.mini-box1:hover .mini-boxtext h5 {
+    color: white;
+    z-index: 999;
+    font-size: 1.3vw;
+}
+
+.page8 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://h5d9a9f8.rocketcdn.me/wp-content/themes/handi_theme/assets/img/7769d2580ce924f50191.svg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.page8-div {
+    height: 100%;
+    width: 100%;
+    background: #242421ed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0px;
+}
+
+.page8-div h4 {
+    color: white;
+    font-size: 1vw;
+    font-family: mountain-2;
+}
+
+.page8-div i {
+    color: white;
+    font-size: 1.5vw;
+}
+
+.page8-div h1 {
+    color: white;
+    font-size: 5vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+}
+
+.map-locator1 {
+    position: absolute;
+    top: 40%;
+
+    left: 30%;
+    width: fit-content;
+}
+
+.map-locator1 h4 {
+    opacity: 0;
+    color: white;
+    transition: all ease 0.5s;
+}
+
+.map-locator1 i {
+    font-size: 2vw;
+    color: blue;
+}
+
+.map-locator1:hover h4 {
+    opacity: 1;
+}
+
+.map-locator2 {
+    position: absolute;
+    top: 50%;
+
+    left: 20%;
+    width: fit-content;
+}
+
+.map-locator2 h4 {
+    opacity: 0;
+    color: white;
+    transition: all ease 0.5s;
+}
+
+.map-locator2 i {
+    font-size: 2vw;
+    color: blue;
+}
+
+.map-locator2:hover h4 {
+    opacity: 1;
+}
+
+.map-locator3 {
+    position: absolute;
+    top: 60%;
+
+    left: 34%;
+    width: fit-content;
+}
+
+.map-locator3 h4 {
+    opacity: 0;
+    color: white;
+    transition: all ease 0.5s;
+}
+
+.map-locator3 i {
+    font-size: 2vw;
+    color: blue;
+}
+
+.map-locator3:hover h4 {
+    opacity: 1;
+}
+
+.map-locator4 {
+    left: 58%;
+    top: 67%;
+    width: fit-content;
+    position: absolute;
+    width: fit-content;
+}
+
+.map-locator4 h4 {
+    opacity: 0;
+    color: white;
+    transition: all ease 0.5s;
+}
+
+.map-locator4 i {
+    font-size: 2vw;
+    color: blue;
+}
+
+.map-locator4:hover h4 {
+    opacity: 1;
+}
+
+.map-locator5 {
+    top: 60%;
+
+    left: 55%;
+    width: fit-content;
+    position: absolute;
+}
+
+.map-locator5 h4 {
+    opacity: 0;
+    color: white;
+    transition: all ease 0.5s;
+}
+
+.map-locator5 i {
+    font-size: 2vw;
+    color: blue;
+}
+
+.map-locator5:hover h4 {
+    opacity: 1;
+}
+
+.map-locator6 {
+
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+
+    left: 30%;
+}
+
+.map-locator6 h4 {
+    opacity: 0;
+    color: white;
+    transition: all ease 0.5s;
+}
+
+.map-locator6 i {
+    font-size: 2vw;
+    color: blue;
+}
+
+.map-locator6:hover h4 {
+    opacity: 1;
+}
+
+
+
+
+.map-locator7 {
+    position: absolute;
+    top: 65%;
+
+    left: 90%;
+    width: fit-content;
+}
+
+.map-locator7 h4 {
+    opacity: 0;
+    color: white;
+    transition: all ease 0.5s;
+}
+
+.map-locator7 i {
+    font-size: 2vw;
+    color: blue;
+}
+
+.map-locator7:hover h4 {
+    opacity: 1;
+}
+
+.map-locator8 {
+    position: absolute;
+    top: 60%;
+    left: 39%;
+    width: fit-content;
+}
+
+.map-locator8 h4 {
+    opacity: 0;
+    color: white;
+    transition: all ease 0.5s;
+}
+
+.map-locator8 i {
+    font-size: 2vw;
+    color: blue;
+}
+
+.map-locator8:hover h4 {
+    opacity: 1;
+}
+
+.map-locator9 {
+    position: absolute;
+    top: 80%;
+
+    left: 34%;
+    width: fit-content;
+}
+
+.map-locator9 h4 {
+    opacity: 0;
+    color: white;
+    transition: all ease 0.5s;
+}
+
+.map-locator9 i {
+    font-size: 2vw;
+    color: blue;
+}
+
+.map-locator9:hover h4 {
+    opacity: 1;
+}
+
+.map-locator10 {
+    position: absolute;
+    top: 60%;
+
+    left: 84%;
+    width: fit-content;
+}
+
+.map-locator10 h4 {
+    opacity: 0;
+    color: white;
+    transition: all ease 0.5s;
+}
+
+.map-locator10 i {
+    font-size: 2vw;
+    color: blue;
+}
+
+.map-locator10:hover h4 {
+    opacity: 1;
+}
+
+.map-locator11 {
+    position: absolute;
+    top: 65%;
+
+    left: 74%;
+    width: fit-content;
+}
+
+.map-locator11 h4 {
+    opacity: 0;
+    color: white;
+    transition: all ease 0.5s;
+}
+
+.map-locator11 i {
+    font-size: 2vw;
+    color: blue;
+}
+
+.map-locator11:hover h4 {
+    opacity: 1;
+}
+
+.map-locator12 {
+    position: absolute;
+    top: 60%;
+
+    left: 10%;
+    width: fit-content;
+}
+
+.map-locator12 h4 {
+    opacity: 0;
+    color: white;
+    transition: all ease 0.5s;
+}
+
+.map-locator12 i {
+    font-size: 2vw;
+    color: blue;
+}
+
+.map-locator12:hover h4 {
+    opacity: 1;
+}
+
+.page9 {
+    height: 70vh;
+    width: 100%;
+    background: #F2F0E8;
+    display: flex;
+
+}
+
+.page9-part1 {
+    height: 100%;
+    width: 50%;
+    background: rgb(240, 237, 237);
+}
+
+.page9-part11 {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 50px;
+    color: black;
+    font-family: mountain-2;
+}
+
+.page9-part11 i {
+    color: black;
+    font-size: 1.7vw;
+}
+
+.page9-part111 {
+    padding: 20px 30px;
+    height: 500px;
+    width: 100%;
+}
+
+.page9-part111 h1 {
+    color: black;
+    font-family: lato;
+    font-weight: 600;
+    font-size: 2vw;
+}
+
+.page9-part111 h4 {
+    color: black;
+    font-family: mountain-2;
+    font-weight: 100;
+    font-size: 1.1vw;
+    margin: 20px 0px;
+}
+
+.thumb {
+    height: 100px;
+    width: 100px;
+    margin: 0px 0px;
+}
+
+.thumb i {
+    font-size: 3vw;
+    color: rgba(13, 13, 13, 0.242);
+}
+
+.loco {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.loco h3 {
+    font-size: 1.1vw;
+    color: black;
+    font-family: mountain-2;
+    font-weight: 800;
+}
+
+.icon-star {
+    color: goldenrod;
+    font-size: 1.3vw;
+}
+
+.page9-part2 {
+    height: 100%;
+    width: 50%;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 50px 50px;
+}
+
+.scroll-box {
+    display: flex;
+    align-items: center;
+}
+
+.count {
+    display: flex;
+    align-items: center;
+    transform: rotate(-90deg);
+
+    width: fit-content;
+    padding: 5px 3px;
+
+
+}
+
+.count h5 {
+    color: black;
+    font-size: 1.2vw;
+}
+
+.count h6 {
+    color: black;
+    font-size: 1.2vw;
+}
+
+.inner-box {
+    height: 100px;
+    width: 50px;
+
+}
+
+.box-1 {
+
+    height: 50%;
+    width: 100%;
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-1 i {
+    color: black;
+    font-size: 2vw;
+}
+
+.box-2 {
+
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-2 i {
+    color: black;
+    font-size: 2vw;
+}
+
+.image-change {
+    height: 380px;
+    width: 550px;
+    background: yellow;
+    overflow: hidden;
+    overflow: auto;
+}
+
+.image-change img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.page-10 {
+    height: 100vh;
+    width: 100%;
+    background: #242421;
+}
+
+.page-10-part1 {
+    height: 40%;
+    width: 100%;
+
+}
+
+.page-10-part1 h1 {
+    color: whitr;
+    font-family: lato;
+    font-weight: 900;
+    font-size: 5vw;
+
+}
+
+.contact-btn {
+    background: white;
+    color: black;
+    font-family: mountain-2;
+    font-weight: 400;
+    font-size: 1vw;
+    width: fit-content;
+    padding: 20px 30px;
+    border-radius: 50px;
+    margin: 30px 20px;
+}
+
+.page-10-part2-1 {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.page-10-part2-1 h3 {
+    font-size: 1.5vw;
+    white-space: nowrap;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.page-10-part2-1 #name {
+    padding: 20px 0px;
+    width: 200%;
+    background: #3A3A37;
+}
+
+.page-10-part2-1 #email {
+    padding: 20px 0px;
+    width: 200%;
+    background: #3A3A37;
+    white-space: nowrap;
+}
+
+.page10-part2-2 {
+    width: 100%;
+    height: 280px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+
+.page10-part2-2 h4 {
+    color: white;
+    font-size: 1vw;
+    font-family: lato;
+    font-weight: 400;
+    line-height: 1.4vw;
+}
+
+.page10-part2-2 h3 {
+    color: white;
+    font-family: lato;
+    font-size: 1vw;
+}
+
+.bot-icon {
+    background: #3A3A37;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    padding: 5px 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bot-icon i {
+    color: black;
+    font-size: 1.5vw;
+
+}
+
+.bot-icon img {
+    height: 60px;
+    width: 150px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:600px) {
+    #nav {
+        background-color: cadetblue;
+    }
+
+    #nav-part1 h1 {
+        display: none;
+
+    }
+}
